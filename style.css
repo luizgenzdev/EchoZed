@@ -1,0 +1,26 @@
+
+
+/* carousel.css */
+
+.carousel {
+  /* container width */
+  overflow-x: auto;         /* enable horizontal scroll */
+  display: flex;            /* arrange slides in a row */
+  scroll-snap-type: x mandatory; /* snap to slides */
+  -webkit-overflow-scrolling: touch; /* smooth swipe on mobile */
+}
+
+.carousel::-webkit-scrollbar {
+  display: none; /* hide scrollbar */
+}
+
+.slide {
+  margin: 0;
+  flex: 0 0 90%;           /* each slide takes full width */
+  scroll-snap-align: center; /* snap position */
+  background-image: linear-gradient(to left,rgba(0,0,0,0.2), rgba(0,0,0,0.5),rgba(0,0,0,0.8), rgba(0,0,0,1)), url('img2.jpg');
+}
+
+.card{
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.1) 20%,rgba(0,0,0,0.5),rgba(0,0,0,0.7),rgba(0,0,0,0.7),rgba(0,0,0,0.9), rgba(0,0,0,1) 70%), url('img2.jpg');
+}
